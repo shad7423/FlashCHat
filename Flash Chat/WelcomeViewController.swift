@@ -22,4 +22,8 @@ class WelcomeViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
+    @IBAction func chatButtonPressed(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "goToChat", sender: self)
+    }
+    
 }
